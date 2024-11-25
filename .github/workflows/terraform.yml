@@ -26,11 +26,11 @@ try {
 }
 
     $env:SUBSCRIPTION_ID = "05c441c5-5379-4290-981d-a62e76b10168";
-    $env:RESOURCE_GROUP = "emapta-simulation-rg";
+    $env:RESOURCE_GROUP = "Emapta-Simulation";
     $env:TENANT_ID = "81785b26-09e4-4df4-8ea5-75c0e3dcbe25";
     $env:LOCATION = "southeastasia";
     $env:AUTH_TYPE = "token";
-    $env:CORRELATION_ID = "6926863d-c837-456b-bb7d-b82d50e9f88d";
+    $env:CORRELATION_ID = "d03a72c6-3478-4e04-8b0f-48372acad5df";
     $env:CLOUD = "AzureCloud";
     
 
@@ -38,7 +38,7 @@ try {
     Invoke-WebRequest -UseBasicParsing -Uri "https://gbl.his.arc.azure.com/azcmagent-windows" -TimeoutSec 30 -OutFile "$env:TEMP\install_windows_azcmagent.ps1";
     & "$env:TEMP\install_windows_azcmagent.ps1";
     if ($LASTEXITCODE -ne 0) { exit 1; }
-    & "$env:ProgramW6432\AzureConnectedMachineAgent\azcmagent.exe" connect --resource-group "$env:RESOURCE_GROUP" --tenant-id "$env:TENANT_ID" --location "$env:LOCATION" --subscription-id "$env:SUBSCRIPTION_ID" --cloud "$env:CLOUD" --tags "ArcSQLServerExtensionDeployment=Disabled" --correlation-id "$env:CORRELATION_ID";
+    & "$env:ProgramW6432\AzureConnectedMachineAgent\azcmagent.exe" connect --resource-group "$env:RESOURCE_GROUP" --tenant-id "$env:TENANT_ID" --location "$env:LOCATION" --subscription-id "$env:SUBSCRIPTION_ID" --cloud "$env:CLOUD" --correlation-id "$env:CORRELATION_ID";
 }
 catch {
     $logBody = @{subscriptionId="$env:SUBSCRIPTION_ID";resourceGroup="$env:RESOURCE_GROUP";tenantId="$env:TENANT_ID";location="$env:LOCATION";correlationId="$env:CORRELATION_ID";authType="$env:AUTH_TYPE";operation="onboarding";messageType=$_.FullyQualifiedErrorId;message="$_";};
