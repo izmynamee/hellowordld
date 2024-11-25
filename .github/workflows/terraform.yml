@@ -30,7 +30,7 @@ try {
     $env:TENANT_ID = "81785b26-09e4-4df4-8ea5-75c0e3dcbe25";
     $env:LOCATION = "southeastasia";
     $env:AUTH_TYPE = "token";
-    $env:CORRELATION_ID = "d03a72c6-3478-4e04-8b0f-48372acad5df";
+    $env:CORRELATION_ID = "5f275baf-f6e4-4246-a121-5da904acd9ad";
     $env:CLOUD = "AzureCloud";
     
 
