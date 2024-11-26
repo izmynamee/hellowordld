@@ -26,11 +26,11 @@ try {
 }
 
     $env:SUBSCRIPTION_ID = "05c441c5-5379-4290-981d-a62e76b10168";
-    $env:RESOURCE_GROUP = "Emapta-Simulation";
+    $env:RESOURCE_GROUP = "sentinel-test-simulation";
     $env:TENANT_ID = "81785b26-09e4-4df4-8ea5-75c0e3dcbe25";
     $env:LOCATION = "southeastasia";
     $env:AUTH_TYPE = "token";
-    $env:CORRELATION_ID = "5f275baf-f6e4-4246-a121-5da904acd9ad";
+    $env:CORRELATION_ID = "8d2fe4b8-3ddc-436c-bd81-0a13a08c35c3";
     $env:CLOUD = "AzureCloud";
     
 
