@@ -1,4 +1,1 @@
-netsh http delete urlacl url=http://+:5985/wsman/
-netsh http add urlacl url=http://+:5985/wsman/ sddl=D:(A;;GX;;;S-1-5-80-569256582-2953403351-2909559716-1301513147-412116970)(A;;GX;;;S-1-5-80-4059739203-877974739-1245631912-527174227-2996563517)
-netsh http delete urlacl url=https://+:5986/wsman/
-netsh http add urlacl url=https://+:5986/wsman/ sddl=D:(A;;GX;;;S-1-5-80-569256582-2953403351-2909559716-1301513147-412116970)(A;;GX;;;S-1-5-80-4059739203-877974739-1245631912-527174227-2996563517)
+https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa2tWMWliQXJoeHJGbUtSaWliT3hsVXpueld4Z3xBQ3Jtc0tsNjdZakNUZE1jNFlibEdRci1MRVNrSmE4cHRWR2dIT2JHMHVTdzM2Q0dROXBRbFFYM2RqYjlVX1RfMUlIT2x1Q1FVQk9xc0tuRDFLemhYaFZqN2NaNjRfTXBYam15S0w0RkswMWIzQlpRRy0taHBBNA&q=https%3A%2F%2Fwww.grandstream.com%2Fhubfs%2FSupport%2520Tools%2Fwin-syslogs.zip&v=i7lhgLCMPp8
